@@ -1,6 +1,9 @@
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Message from './components/Message';
+import CartContainer from './containers/CartContainer';
+import ProductsContainer from './containers/ProductsContainer';
 
 function App() {
   return (
@@ -8,7 +11,9 @@ function App() {
       <Header />
       <main id="mainContainer">
         <div className="container">
-        
+          <ProductsContainer />
+          <Message />
+          <CartContainer />
         </div>
       </main>
       <Footer />
